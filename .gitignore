@@ -1,6 +1,4 @@
 # ---- secrets / credentials -------------------------------------------------
-.env
-.env.*
 !.env.example
 credentials.json
 client_secret*.json
@@ -45,6 +43,9 @@ coverage/
 .DS_Store
 Thumbs.db
 .idea/
-.vscode/*
 !.vscode/extensions.json
 *.swp
+branch_structure.json
+temp_auto_push.bat
+temp_interactive_push.bat
+config.bat
