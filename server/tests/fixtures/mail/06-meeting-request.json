@@ -1,0 +1,13 @@
+{
+  "description": "Meeting request needing a reply. Medium priority, question directed at the recipient.",
+  "expected": { "isAttentionItem": true, "category": "requested_response", "priority": "medium" },
+  "messages": [
+    {
+      "id": "fx-meeting-001",
+      "threadId": "fx-meeting-001",
+      "internalDate": "2026-09-26T10:00:00.000Z",
+      "labelIds": ["INBOX"],
+      "raw": "From: Priya Raman <priya.raman@partner.example>\nTo: demo@local.test\nSubject: Can you review the integration plan on Thursday?\nDate: Sat, 26 Sep 2026 10:00:00 +0000\nMessage-ID: <meeting-9931@partner.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nHi,\n\nFollowing up on our conversation last week about the integration plan. I have\ndrafted the document and it is ready for your review.\n\nWould you have 30 minutes on Thursday afternoon to go through it? I can do\n13:30, 15:00, or 16:30 your time. If none of those work, let me know what suits\nyou better and I will rearrange.\n\nCould you also let me know whether you are comfortable with the rollback plan in\nsection 4? That was the part your team was unsure about.\n\nThe meeting request has not been sent yet, so no calendar invite exists at this\npoint. Once you confirm a time I will send the invite.\n\nThanks,\nPriya\n"
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "description": "A deadline that has already passed. Must be suppressed with reason 'deadline_passed'.",
+  "expected": { "isAttentionItem": false, "reason": "deadline_passed" },
+  "demoAgeDays": 12,
+  "messages": [
+    {
+      "id": "fx-passed-001",
+      "threadId": "fx-passed-001",
+      "internalDate": "2026-09-01T09:00:00.000Z",
+      "labelIds": ["INBOX"],
+      "raw": "From: City Council <registrations@citycouncil.example>\nTo: demo@local.test\nSubject: Reminder: parking permit renewal closes {{+9d}}\nDate: Tue, 01 Sep 2026 09:00:00 +0000\nMessage-ID: <council-2201@citycouncil.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nDear resident,\n\nThis is a reminder that your residential parking permit must be renewed. The\nrenewal window closes on {{+9d}} and permits are not renewed after that\ndate.\n\nPlease submit your renewal application before {{+9d}}. Applications received\nafter the closing date cannot be processed for the current year, and a new permit\ncannot be issued until the following cycle opens.\n\nRenewal applications can be submitted at the office or through the online portal.\n\nCity Council Registrations\n"
+    }
+  ]
+}

@@ -1,0 +1,20 @@
+{
+  "description": "A request that was raised and then resolved in the same thread. Must produce ZERO open attention items.",
+  "expected": { "isAttentionItem": false, "category": "verification", "reason": "resolved_in_thread" },
+  "messages": [
+    {
+      "id": "fx-resolved-001",
+      "threadId": "fx-resolved-001",
+      "internalDate": "2026-09-22T11:00:00.000Z",
+      "labelIds": ["INBOX"],
+      "raw": "From: Example Cloud Support <support@cloud.example>\nTo: demo@local.test\nSubject: Please verify your account email address\nDate: Tue, 22 Sep 2026 11:00:00 +0000\nMessage-ID: <verify-1@cloud.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nHello,\n\nPlease verify your email address for your account. We have detected that the\naddress on file has not been confirmed, and unverified accounts may be limited.\n\nPlease confirm your email address within 7 days to avoid any restriction on your\naccount.\n\nThank you,\nExample Cloud Support\n"
+    },
+    {
+      "id": "fx-resolved-002",
+      "threadId": "fx-resolved-001",
+      "internalDate": "2026-09-22T14:32:00.000Z",
+      "labelIds": ["INBOX"],
+      "raw": "From: Example Cloud Support <support@cloud.example>\nTo: demo@local.test\nRe: Please verify your account email address\nDate: Tue, 22 Sep 2026 14:32:00 +0000\nIn-Reply-To: <verify-1@cloud.example>\nReferences: <verify-1@cloud.example>\nMessage-ID: <verify-2@cloud.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nHello,\n\nWe have received your confirmation. Your email address has been verified and your\nverification is complete.\n\nNo further action is required. Your account is fully active.\n\nThanks,\nExample Cloud Support\n"
+    }
+  ]
+}

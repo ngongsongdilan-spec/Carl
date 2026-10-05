@@ -1,0 +1,50 @@
+# ---- secrets / credentials -------------------------------------------------
+.env
+.env.*
+!.env.example
+credentials.json
+client_secret*.json
+gcp-*.json
+*token*.json
+token.json
+
+# ---- local data ------------------------------------------------------------
+data/
+*.db
+*.db-journal
+*.db-wal
+*.db-shm
+
+# ---- scratch (helper scripts, local run artifacts) --------------------------
+*.bat
+smoke.log
+p2.log
+p3.log
+p4.log
+p5.log
+prod.log
+prod*.json
+*.html
+!web/index.html
+
+# ---- node ------------------------------------------------------------------
+node_modules/
+dist/
+build/
+.vite/
+*.tsbuildinfo
+npm-debug.log*
+yarn-error.log*
+.npm/
+
+# ---- test / coverage -------------------------------------------------------
+coverage/
+.nyc_output/
+
+# ---- editor / os -----------------------------------------------------------
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/*
+!.vscode/extensions.json
+*.swp

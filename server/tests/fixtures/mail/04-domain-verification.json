@@ -1,0 +1,13 @@
+{
+  "description": "Domain registrar identity verification request. High priority, deadline in 72 hours.",
+  "expected": { "isAttentionItem": true, "category": "verification", "priority": "high" },
+  "messages": [
+    {
+      "id": "fx-verify-001",
+      "threadId": "fx-verify-001",
+      "internalDate": "2026-09-28T09:05:00.000Z",
+      "labelIds": ["INBOX", "IMPORTANT"],
+      "raw": "From: Registrar Compliance <compliance@registrar.example>\nTo: demo@local.test\nSubject: Action required: verify registrant contact for example.com\nDate: Mon, 28 Sep 2026 09:05:00 +0000\nMessage-ID: <verify-88213@registrar.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nHello,\n\nWe are completing a periodic registrant verification for the domain example.com,\nregistered to your account. Under our registrar accreditation requirements we must\nconfirm the registrant contact details for every domain we host.\n\nPlease complete identity verification for example.com within 7 days.\n\nWhy this matters: failure to complete verification may result in the domain being\nsuspended and the registrant contact record being deleted. A suspended domain\ncannot be renewed or transferred until verification is completed.\n\nTo complete verification, sign in to your registrar account and confirm the\nregistrant organisation and contact phone number. The whole process takes about\nfive minutes. If the details on record are correct, the verification completes\nimmediately.\n\nIf you no longer control this domain, reply to this message so we can correct the\nregistrant record.\n\nRegistrar Compliance Team\n"
+    }
+  ]
+}

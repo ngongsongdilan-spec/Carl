@@ -1,0 +1,13 @@
+{
+  "description": "Promotional newsletter from a marketing sender. Must NOT produce an attention item.",
+  "expected": { "isAttentionItem": false, "category": "newsletter" },
+  "messages": [
+    {
+      "id": "fx-newsletter-001",
+      "threadId": "fx-newsletter-001",
+      "internalDate": "2026-09-20T08:00:00.000Z",
+      "labelIds": ["INBOX", "CATEGORY_PROMOTIONS"],
+      "raw": "From: Weekly Digest <digest@newsletters.example.com>\nTo: demo@local.test\nSubject: The Weekly Digest - issue 412: things we read this week\nDate: Sun, 20 Sep 2026 08:00:00 +0000\nPrecedence: bulk\nList-Unsubscribe: <mailto:unsubscribe@newsletters.example.com>\nList-Id: Weekly Digest <digest.newsletters.example.com>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nHello and welcome to issue 412 of The Weekly Digest.\n\nThis week our editors collected a long list of articles about productivity systems,\nsome thoughts on remote work, and a few book recommendations. We also reviewed a\nnew wave of productivity apps that claim to change how you plan your week.\n\nOur readers wrote in about focus techniques, meeting fatigue, and how to keep a\nto-do list from growing without bound. Several of you asked for more interviews\nwith people who manage large remote teams, so we have included two of those this\nweek. We have also published a short history of the Pomodoro technique.\n\nIf you enjoy this issue, forward it to a colleague who might like it. You are\nreceiving this email because you subscribed to our weekly roundup. We have been\nsending it every Sunday for several years and it remains one of the most widely\nread newsletters in the industry.\n\nUnsubscribe here if you would rather not receive this email. Manage your\npreferences at any time using the link in the footer below.\n\nView in browser\n\nThe Weekly Digest\n1 Example Street\nExample City\n"
+    }
+  ]
+}

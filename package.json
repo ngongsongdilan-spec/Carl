@@ -1,0 +1,35 @@
+{
+  "name": "personal-attention-engine",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A personal AI attention engine: turns a noisy Gmail inbox into a short list of things that genuinely deserve attention.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "workspaces": [
+    "server",
+    "web"
+  ],
+  "scripts": {
+    "dev": "concurrently -n server,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev:server": "npm --workspace server run dev",
+    "dev:web": "npm --workspace web run dev",
+    "build": "npm --workspace web run build",
+    "start": "npm --workspace server run start",
+    "test": "npm --workspace server run test",
+    "test:watch": "npm --workspace server run test:watch",
+    "typecheck": "npm --workspace server run typecheck && npm --workspace web run typecheck",
+    "e2e": "npm --workspace server run e2e",
+    "seed": "npm --workspace server run seed",
+    "seed:reset": "npm --workspace server run seed -- --reset"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  },
+  "allowScripts": {
+    "esbuild@0.28.2": true,
+    "esbuild@0.21.5": true,
+    "esbuild@0.25.12": true
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "description": "Multi-message thread: a meeting is proposed, then rescheduled by the other party. The latest message is the live obligation.",
+  "expected": { "isAttentionItem": true, "category": "appointment", "priority": "medium" },
+  "messages": [
+    {
+      "id": "fx-thread-001",
+      "threadId": "fx-thread-001",
+      "internalDate": "2026-09-24T09:00:00.000Z",
+      "labelIds": ["INBOX"],
+      "raw": "From: Hospital Scheduling <scheduling@clinic.example>\nTo: demo@local.test\nSubject: Your appointment on {{+6d}}\nDate: Thu, 24 Sep 2026 09:00:00 +0000\nMessage-ID: <appt-1@clinic.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nYour appointment is confirmed for {{+6d}} at 11:00 with Dr Almeida.\n\nPlease arrive ten minutes early and bring your referral letter.\n\nClinic Scheduling\n"
+    },
+    {
+      "id": "fx-thread-002",
+      "threadId": "fx-thread-001",
+      "internalDate": "2026-09-26T15:40:00.000Z",
+      "labelIds": ["INBOX", "IMPORTANT"],
+      "raw": "From: Hospital Scheduling <scheduling@clinic.example>\nTo: demo@local.test\nRe: Your appointment on {{+6d}}\nDate: Sat, 26 Sep 2026 15:40:00 +0000\nIn-Reply-To: <appt-1@clinic.example>\nReferences: <appt-1@clinic.example>\nMessage-ID: <appt-2@clinic.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nPlease note that your appointment has been rescheduled.\n\nThe previous slot on {{+6d}} at 11:00 is no longer available and your\nappointment has been moved to {{+8d}} at 14:15 with Dr Almeida.\n\nYou must confirm the new appointment time by replying to this message. If you do\nnot confirm by {{+7d}} the new slot will be released and you will be placed\nback on the waiting list, with a wait of several weeks.\n\nPlease bring your referral letter to the new appointment.\n\nClinic Scheduling\n"
+    }
+  ]
+}

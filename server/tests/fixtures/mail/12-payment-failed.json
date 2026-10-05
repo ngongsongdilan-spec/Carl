@@ -1,0 +1,13 @@
+{
+  "description": "Failed card payment requiring action. High priority, financial consequence.",
+  "expected": { "isAttentionItem": true, "category": "payment_action", "priority": "high" },
+  "messages": [
+    {
+      "id": "fx-payment-001",
+      "threadId": "fx-payment-001",
+      "internalDate": "2026-09-28T06:15:00.000Z",
+      "labelIds": ["INBOX", "IMPORTANT"],
+      "raw": "From: Example Utilities Billing <billing@utilities.example>\nTo: demo@local.test\nSubject: Payment failed - your electricity bill is overdue\nDate: Mon, 28 Sep 2026 06:15:00 +0000\nMessage-ID: <bill-7712@utilities.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nYour automatic payment of $84.30 has failed. The card we have on file was declined\nby your bank.\n\nYour electricity bill is now overdue and a late payment fee of $8.00 has been\nadded. The outstanding balance is $92.30.\n\nPlease update your payment method and pay the outstanding amount within 7 days.\n\nIf payment is not received, your supply will be disconnected. You will receive a\nfinal notice 7 days before disconnection.\n\nPay now using the link below, or call us to arrange a payment plan.\n\nExample Utilities Billing\n"
+    }
+  ]
+}

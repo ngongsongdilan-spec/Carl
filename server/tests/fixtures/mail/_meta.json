@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/schema.json",
+  "title": "Attention Engine fixtures",
+  "description": "12 fixture emails covering important, ordinary, and edge-case messages. Each file is a real RFC822 message, parsed by the production MIME parser.",
+  "generated": "handwritten",
+  "notes": [
+    "internalDate values are fixed so deadline tests are deterministic.",
+    "Thread fixtures share a threadId and expect thread-level analysis.",
+    "The `expected` block is advisory metadata for humans; the authoritative assertions live in server/tests/fixtures.test.ts."
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "description": "University project presentation date moved. Deadline + required action.",
+  "expected": { "isAttentionItem": true, "category": "requirement", "priority": "high" },
+  "messages": [
+    {
+      "id": "fx-uni-001",
+      "threadId": "fx-uni-001",
+      "internalDate": "2026-09-27T16:20:00.000Z",
+      "labelIds": ["INBOX", "IMPORTANT"],
+      "raw": "From: Dr. Ada Mensah <a.mensah@university.example>\nTo: demo@local.test\nSubject: Changed: CS4020 project presentation now {{+17d}}\nDate: Sun, 27 Sep 2026 16:20:00 +0000\nMessage-ID: <uni-5512@university.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nDear student,\n\nI need to inform you of a change to the CS4020 schedule. The project presentation\ndate has been moved from {{+10d}} to {{+17d}}, and the presentation time slot\nhas changed from 09:00 to 14:00 in Room B2.\n\nPlease note that the submission deadline for the written report is unchanged and\nremains {{+15d}}. You are required to submit the report through the module\nportal by that date.\n\nWhy this matters: the presentation and the report are assessed as a single unit,\nso missing either deadline affects your grade significantly. Groups who presented\non the original date have already been allocated presentation slots, so you\ncannot revert to the earlier date.\n\nAction: confirm the new date in your group, and make sure the report is uploaded\nby {{+15d}}. If the new date conflicts with another commitment, reply to this\nmessage today so we can arrange an alternative slot.\n\nBest regards,\nDr. Ada Mensah\nModule Convenor, CS4020\n"
+    }
+  ]
+}

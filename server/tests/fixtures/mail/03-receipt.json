@@ -1,0 +1,13 @@
+{
+  "description": "Ordinary purchase receipt. Informational, no action. Must NOT produce an attention item.",
+  "expected": { "isAttentionItem": false, "category": "receipt" },
+  "messages": [
+    {
+      "id": "fx-receipt-001",
+      "threadId": "fx-receipt-001",
+      "internalDate": "2026-09-19T17:12:00.000Z",
+      "labelIds": ["INBOX"],
+      "raw": "From: Example Coffee <receipts@example-coffee.example>\nTo: demo@local.test\nSubject: Receipt for your purchase at Example Coffee\nDate: Sat, 19 Sep 2026 17:12:00 +0000\nMessage-ID: <receipt-8821@example-coffee.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nThanks for your purchase!\n\nReceipt #88213\nDate: 19 September 2026, 17:11\n\n2x Filter coffee, medium roast .......... $16.00\n1x Almond croissant ....................... $4.50\n------------------------------------------------\nSubtotal ................................ $20.50\nTax ..................................... $1.68\nTotal ................................... $22.18\n\nPaid by card ending 4417. A confirmation has been sent to your payment email.\n\nYou do not need to do anything. Keep this receipt for your records.\n"
+    }
+  ]
+}

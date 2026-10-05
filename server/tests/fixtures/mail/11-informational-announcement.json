@@ -1,0 +1,13 @@
+{
+  "description": "Company product announcement with no request. Informational only. Must NOT produce an attention item.",
+  "expected": { "isAttentionItem": false, "category": "informational" },
+  "messages": [
+    {
+      "id": "fx-announce-001",
+      "threadId": "fx-announce-001",
+      "internalDate": "2026-09-23T12:00:00.000Z",
+      "labelIds": ["INBOX", "CATEGORY_UPDATES"],
+      "raw": "From: Example Software <news@example-software.example>\nTo: demo@local.test\nSubject: We have launched offline mode for the desktop client\nDate: Wed, 23 Sep 2026 12:00:00 +0000\nPrecedence: bulk\nList-Unsubscribe: <mailto:news@example-software.example>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nWe are pleased to announce that offline mode is now available in the 4.2 release of\nour desktop client.\n\nOffline mode caches your projects locally so you can keep working without a\nnetwork connection, and changes are synchronised when you reconnect. We have also\nimproved startup time and reduced memory use in long-running sessions.\n\nYou can read the full release notes in the documentation. Existing installations\nwill update automatically on next launch.\n\nNothing is required from you. If you would prefer to manage updates manually,\nthe preference is available under Settings.\n\nThe Example Software Team\n"
+    }
+  ]
+}

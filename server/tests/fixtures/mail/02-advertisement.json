@@ -1,0 +1,13 @@
+{
+  "description": "Retail promotion. Must NOT produce an attention item.",
+  "expected": { "isAttentionItem": false, "category": "advertisement" },
+  "messages": [
+    {
+      "id": "fx-ad-001",
+      "threadId": "fx-ad-001",
+      "internalDate": "2026-09-21T14:30:00.000Z",
+      "labelIds": ["INBOX", "CATEGORY_PROMOTIONS"],
+      "raw": "From: Example Outfitters <offers@example-outfitters.com>\nTo: demo@local.test\nSubject: 40% off everything - 48 hours only\nDate: Mon, 21 Sep 2026 14:30:00 +0000\nPrecedence: bulk\nList-Unsubscribe: <mailto:unsubscribe@example-outfitters.com>\nMIME-Version: 1.0\nContent-Type: text/plain; charset=\"UTF-8\"\n\nOur biggest sale of the season is here.\n\nSave 40% on every order this weekend with code SAVE40 at checkout. Free returns on\nall items, and free shipping on orders over $50. New arrivals from the autumn\ncollection are already reduced, and our best sellers are moving quickly.\n\nShop the sale now before it ends. Click here to shop all new arrivals.\n\nUnsubscribe from promotional emails at any time.\n"
+    }
+  ]
+}
