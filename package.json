@@ -12,11 +12,11 @@
     "web"
   ],
   "scripts": {
-    "dev": "concurrently -n server,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
+    "dev": "node api.js && concurrently -n server,web -c cyan,magenta \"npm:dev:server\" \"npm:dev:web\"",
     "dev:server": "npm --workspace server run dev",
     "dev:web": "npm --workspace web run dev",
-    "build": "npm --workspace web run build",
-    "start": "npm --workspace server run start",
+    "build": "node api.js && npm --workspace web run build",
+    "start": "node api.js && npm --workspace server run start",
     "test": "npm --workspace server run test",
     "test:watch": "npm --workspace server run test:watch",
     "typecheck": "npm --workspace server run typecheck && npm --workspace web run typecheck",
